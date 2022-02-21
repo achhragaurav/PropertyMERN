@@ -10,7 +10,7 @@ export default async function handler (req, res) {
   switch (method) {
     case 'GET':
       try {
-        const resultsPerPage = 10;
+        const resultsPerPage = 20;
         let page = +req.query.page >= 1 ? +req.query.page+1 : 1;
         const query = req.query.page;
         page = page - 1
@@ -29,8 +29,8 @@ export default async function handler (req, res) {
       break
     case 'POST':
       try {
-        const user = await User.create(req.body)
-        res.status(201).json({ success: true, data: user })
+        const listings = await listingsAndReviews.create(req.body)
+        res.status(201).json({ success: true, data: listings })
       } catch (error) {
         res.status(400).json({ success: false })
       }

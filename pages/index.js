@@ -1,30 +1,27 @@
-import Head from 'next/head'
+// add bootstrap css 
+import 'bootstrap/dist/css/bootstrap.css'
+// own css files here
 import styles from '../styles/Home.module.css'
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import Loading from '../components/Loading';
+import ListingItem from '../components/ListingItem';
+import { useSelector } from 'react-redux';
+import { getListingsByPage } from '../store/apiCalls/listingsAPICalls';
+import { useDispatch } from 'react-redux';
 
 export default function Home() {
-  const [data, setData] = useState([]);
+  const dispatch = useDispatch();
+  const listings = useSelector(state=>state.listings.data);
+  console.log(listings);
   useEffect(() => {
-    const fetchFunction = async() =>{
-      const data = await fetch("/api/listings");
-      const done = await data.json();
-      console.log(done);
-      setData(done.data)
-    }
-    fetchFunction()
+    getListingsByPage(dispatch)
   }, []);
 
 
   return (
     <div className={styles.container}>
-      {data.length > 1 && data.map((listing) =>{
-        return  <Image
-        src={listing.images.picture_url}
-        alt="Picture of the author"
-        width={500}
-        height={500}
-      />
+      {listings.length > 1 && listings.map((listing) =>{
+        return  <ListingItem data={listing}/>
       })}
     </div>
   )
