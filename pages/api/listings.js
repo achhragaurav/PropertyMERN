@@ -14,7 +14,6 @@ export default async function handler (req, res) {
         let page = +req.query.page >= 1 ? +req.query.page+1 : 1;
         const query = req.query.page;
         page = page - 1
-        console.log(query);
         if(query){
           const listingsperpage =  await listingsAndReviews.find({}).limit(resultsPerPage).skip(resultsPerPage * page);
           const listingsAndReviewsCount = await listingsAndReviews.estimatedDocumentCount();

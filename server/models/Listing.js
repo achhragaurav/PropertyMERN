@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 
 const listingsAndReviews = new mongoose.Schema({
+  _id: {type: String},
   listing_url: {type: String},
   name: {type: String},
   summary: {type: String},
@@ -27,25 +28,25 @@ const listingsAndReviews = new mongoose.Schema({
   beds: {type: Number},
   number_of_reviews: {type: Number},
   bathrooms: {
-    type: {$numberDecimal: {type: String}}
+    type: Number
   },
   amenities:{
     type: [String]
   },
   price: {
-    type: {$numberDecimal: {type: Number}}
+    type: Number
   },
   security_deposit: {
-    type: {$numberDecimal: {type: Number}}
+    type: Number
   },
   cleaning_fee: {
-    type: {$numberDecimal: {type: Number}}
+    type: Number
   },
   extra_people: {
-    type: {$numberDecimal: {type: Number}}
+    type: Number
   },
   guests_included: {
-    type: {$numberDecimal: {type: Number}}
+    type: Number
   },
   images: {
     type: {thumbnail_url: {type: String}},

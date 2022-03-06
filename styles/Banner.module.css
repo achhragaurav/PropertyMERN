@@ -1,0 +1,43 @@
+.banner{
+    width: 80vw;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-container{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.banner-image-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-content-container{
+    flex: 1;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 2rem;
+    padding-left: 4rem;
+}
+.banner-content-container h3, .banner-content-container p{
+width: 65%;
+margin: 0;
+}
+.banner-content-container span{
+    align-items: center;
+    justify-content: center;
+display: flex;
+}
+.banner-content-container span p{
+   margin-left: 10px;
+}

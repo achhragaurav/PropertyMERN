@@ -1,0 +1,298 @@
+
+.listingIdPage{
+    min-width: 19rem;
+    width: 58.7vw;
+    min-height: 150vh;
+    height: fit-content;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.topDetail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+.name{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.name h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.name-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+.name-bottom p{
+   margin-right: 10px;
+}
+.topDetailRight{
+    display: flex;
+    }
+.topDetailRight button{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 2rem;
+   background: transparent;
+   text-decoration: underline;
+   border: none;
+   font-size: 11px;
+   cursor: pointer;
+ }
+.topDetailRight button:hover{
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+}
+.imageSection img{
+    border-radius: 10px;
+}
+.explanationBooking{
+height: 80vh;
+display: flex;
+width: 100%;
+}
+.explanationBookingLeft{
+width: 65%;
+height: 100% !important;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+}
+.details{
+    height: 15%;
+   width: 100%;
+}
+.details h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 1rem;
+}
+.details p{
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 5px;
+}
+.details span{
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(226, 226, 226);
+    margin-top: 20px;
+}
+.cancellation{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.pets{
+margin: 0;
+}
+.cancel{
+    margin-top: 1.2rem;
+}
+.superHostSmall{
+    margin-top: 1.2rem;
+
+}
+.pets h4, .cancel h4, .superHostSmall h4{
+margin: 0;
+    font-size: 13.5px;
+    font-weight: 500;
+}
+.pets p, .cancel p, .superHostSmall p{
+margin: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgb(116, 116, 116);
+
+}
+.description{
+    height: 33.5%;
+}
+.description p{
+  font-size: .8rem;
+  margin: 0;} 
+  .description button{
+background: transparent;   
+border: none;
+margin: 0;
+padding: 0;
+padding-top: 20px;
+cursor: pointer;
+font-size: 13px;
+font-weight: 700;
+text-decoration: underline;
+outline: none;
+} 
+.description span{
+    height: .5px;
+    background: rgb(226, 226, 226);
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-top: 15px;
+} 
+.sleepSection{
+    height: 20%;
+    width: 100%;
+}
+.sleepSection h3{  
+    margin: 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+}
+.box{
+    width: 9rem;
+    border: .5px solid black;
+    padding: .5rem 2rem;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    height: 3.7rem;
+}
+.box h4{
+    margin: 0;
+font-weight: 500;
+font-size: 15px;
+display: flex;
+}
+.box p{
+    margin: 0;
+    font-size: 11px;
+}
+.box i{}
+
+
+.cancellation span{
+    height: 1px !important;
+    background: rgb(226, 226, 226) !important;
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-top: 7px;
+}
+
+
+.explanationBookingRight{
+    width: 35%;
+}
+.placeOffers{
+    height: 50vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.offers{
+   margin: 15px 0px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   height: 70%;
+   min-width: 100%;
+   list-style: none;
+   padding: 0;
+}
+.offers li{
+    margin-right: 10px;
+    margin-left: 0;
+}
+.placeOffers button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: .5rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.placeOffers h2{
+   font-size: 17px;
+
+}
+.calenders{}
+.actualReviews{
+    display: flex;
+    flex-wrap: wrap;
+}
+.reviewBox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+   padding: 10px;
+}
+.reviewBoxTop{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.reviewTopBox-top{
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+.reviewTopBox-top h1{
+font-size: 14px;
+padding-left: 10px;
+}
+.reviewBoxTop p{
+font-size: 12px;
+
+}
+.reviewBoxTop img{
+width: 30px;
+border-radius: 50%;
+margin: 0;
+padding: 0;
+}
+.reviewBoxMid{}
+.reviewBoxButton{}
+.reviewBoxButton button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+}
+.showAll{
+    
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 0.8rem 1.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.showMore{
+    background: transparent;   
+border: none;
+margin: 0;
+padding: 0;
+padding-top: 20px;
+cursor: pointer;
+font-size: 13px;
+font-weight: 700;
+text-decoration: underline;
+outline: none;
+}

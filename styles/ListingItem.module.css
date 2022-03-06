@@ -6,10 +6,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: rgb(255, 255, 248);
+    background: rgb(255, 255, 255);
     overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px black;
 }
 .listItemContent{
     display: flex;
@@ -20,4 +18,39 @@
 }
 .image{
 
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: green;
+    display: flex;
+    flex-direction: column;
+}
+.price p{
+    display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: space-around;
+   color: rgb(3, 154, 255);
+   margin-top: 6px;
+}
+
+.price h3{
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 5px;
+}
+.ratings{
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.rating{
+    transform: scale(0.8);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }

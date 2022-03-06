@@ -1,0 +1,38 @@
+.filter
+{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter-container{
+    width: 65%;
+    height: 3.7rem;
+}
+.filter-cover{
+    background: black;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px solid black;
+}
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.form input{
+    flex: 1;
+    outline: none;
+    border-radius: 30px;
+    background: black;
+border: none;
+transition: all .5s ease;
+}
+.form input:hover{
+   background: rgb(43, 43, 43);
+}
+    

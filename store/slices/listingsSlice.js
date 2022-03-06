@@ -12,12 +12,18 @@ export const listingsSlice = createSlice({
     initialState,
     reducers: {
          getData (state, action){
-            state.data = action.payload.data
+            state.data = action.payload.data,
+            state.pages=action.payload.page,
+            state.totalPages=action.payload.totalPages
+        },
+        loadingData(state, action){
+            state.loading=action.payload
         }
     }
 })
 
 export const {
-    getData
+    getData,
+    loadingData
 } = listingsSlice.actions;
 export default listingsSlice.reducer;
