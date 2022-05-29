@@ -4,7 +4,7 @@ export const getListingsByPage = async (dispatch, page) =>{
         dispatch(loadingData(true))
         const data = await fetch(`/api/listings?page=${page}`);
         const done = await data.json();
-        console.log(page, "I am booboo");
+        console.log(done, "I am booboo");
         dispatch(getData(done))
         dispatch(loadingData(false))
         return done
