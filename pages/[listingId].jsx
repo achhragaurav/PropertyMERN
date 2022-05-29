@@ -45,7 +45,7 @@ const ListingId = ({preData}) => {
   const [foundData, setFoundData] = useState(preData);
   console.log(foundData);
   const anemities = foundData && foundData.amenities.slice(foundData.amenities.length/2, foundData.amenities.length).map((item, index) => {
-    return <li><AiOutlineWifi /> {item}</li>
+    return <li key={ index}><AiOutlineWifi /> {item}</li>
     })
 
   const getSingleListingData = async () =>{
@@ -170,7 +170,7 @@ const ListingId = ({preData}) => {
           <div className={classes["actualReviews"]}>
             {foundData.reviews.splice(0,4).map((review, index) =>{
               return (
-                <div className={classes["reviewBox"]} key={index}>
+                <div  className={classes["reviewBox"]} key={index}>
               <div className={classes["reviewBoxTop"]}>
                 <div className={classes["reviewTopBox-top"]}>
                 <img src="https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png" alt="" />
