@@ -1,0 +1,12 @@
+.nav{
+    border: none;
+    outline: none;
+    position: absolute;
+    width: 60vw;
+    top: 0;
+    left: 19%;
+}
+.nav-link a{
+    color: black;
+    text-decoration: none;
+}

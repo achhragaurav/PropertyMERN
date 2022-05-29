@@ -1,0 +1,30 @@
+.home-section{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(107, 0, 0, 0.13), rgba(0, 0, 112, 0.226)), url("https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") center/cover ;
+}
+.home-section-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    margin-bottom: 4rem;
+}
+.home-section-text h1{
+font-size: 3rem;
+}
+.home-section-text p{
+font-size:1.1rem;
+
+}
+.our-rooms{
+    width: 100vw;
+    height: 80vh;
+    background: rgb(231, 231, 231);
+}

@@ -37,7 +37,7 @@ const Listid = () => {
     }
   return (
     <>
-      {!loadingData && <>
+      {!loadingData && <div className={styles["listIdPage"]}>
       <Navbar/>
       <Filter/>
       {listings && listings.length > 1 && <Banner data={listings[0]}/>}
@@ -48,7 +48,7 @@ const Listid = () => {
       {listings && <Pagination defaultPage={+paginationPage} count={totalPages} variant="outlined" onChange={(e) => {
         handlePage(e, e.target.textContent)
       }}/>}
-    </div></>}
+    </div></div>}
     {loadingData && <Loading/>}
     </>
   );
