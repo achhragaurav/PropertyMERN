@@ -22,7 +22,7 @@ const Listid = () => {
     const routerPage = router.query.Listid;
     const [paginationPage, setPaginationPage] = useState(1);
     const loadingData = useSelector(state=>state.listings.loading);
-    console.log(loadingData);
+    console.log(listings);
     useEffect(() => {
       const page = (window.location.href.split("/")[4]);
     console.log(page);
