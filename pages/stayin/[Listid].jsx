@@ -42,8 +42,8 @@ const Listid = () => {
       <Filter/>
       {listings && listings.length > 1 && <Banner data={listings[0]}/>}
     <div className={styles.container}>
-      {listings && listings.length > 1 && listings.map((listing) =>{
-        return  <ListingItem data={listing}/>
+      {listings && listings.length > 1 && listings.map((listing,index) =>{
+        return <ListingItem key={ index} data={listing}/>
       })}
       {listings && <Pagination defaultPage={+paginationPage} count={totalPages} variant="outlined" onChange={(e) => {
         handlePage(e, e.target.textContent)

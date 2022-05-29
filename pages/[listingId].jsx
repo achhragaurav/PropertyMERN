@@ -122,7 +122,7 @@ const ListingId = ({preData}) => {
                 <span></span>
             </div>
         <div className={classes["sleepSection"]}>
-          <h3>Where you'll sleep</h3>
+          <h3>Where you&aposll sleep</h3>
           <div className={classes["box"]}>
             <i></i>
             <h4>{`${foundData.bedrooms} Bedroom`}</h4>
@@ -242,10 +242,10 @@ const ListingId = ({preData}) => {
             <p><i></i>Check-in: After 12:00 pm</p>
           </div>
           <div className={classes["homeAndSafety"]}>
-            <p>Committed to Airbnb's enhanced cleaning process. Show more</p>
-            <p>Committed to Airbnb's enhanced cleaning process. Show more</p>
-            <p>Committed to Airbnb's enhanced cleaning process. Show more</p>
-            <p>Committed to Airbnb's enhanced cleaning process. Show more</p>
+            <p>Committed to Airbnb&aposs enhanced cleaning process. Show more</p>
+            <p>Committed to Airbnb&aposs enhanced cleaning process. Show more</p>
+            <p>Committed to Airbnb&aposs enhanced cleaning process. Show more</p>
+            <p>Committed to Airbnb&aposs enhanced cleaning process. Show more</p>
           <button>Show More</button>
           </div>
           <div className={classes["cancellationPolicy"]}>
