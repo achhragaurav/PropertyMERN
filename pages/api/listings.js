@@ -17,6 +17,7 @@ export default async function handler (req, res) {
         if(query){
           const listingsperpage =  await listingsAndReviews.find({}).limit(resultsPerPage).skip(resultsPerPage * page);
           const listingsAndReviewsCount = await listingsAndReviews.estimatedDocumentCount();
+          console.log({ success: true,listingsperpage});
           return res.status(200).json({ success: true,page: page, totalPages: Math.floor(listingsAndReviewsCount/10),data: listingsperpage})
         }
         
